@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "SMRY Companion (Placeholder)",
+  "description": "Quickly open the current page in SMRY for instant summaries.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "Summarize with SMRY",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/index.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "permissions": ["tabs", "storage", "contextMenus"],
+  "commands": {
+    "summarize-page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Summarize the current page with SMRY"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

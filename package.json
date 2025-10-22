@@ -1,0 +1,20 @@
+{
+  "name": "smry-ext",
+  "version": "1.0.0",
+  "description": "Chrome extension to send pages to SMRY",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'No tests yet'",
+    "build": "rimraf dist && tsc && cp -R public/* dist && cp -R assets dist/assets",
+    "dev": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/chrome": "^0.1.24",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.3"
+  }
+}
