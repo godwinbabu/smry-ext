@@ -1,7 +1,7 @@
 {
   "name": "smry-ext",
   "version": "1.0.0",
-  "description": "Chrome extension to send pages to SMRY",
+  "description": "Chrome extension to jump over the paywalls",
   "main": "index.js",
   "scripts": {
     "test": "echo 'No tests yet'",

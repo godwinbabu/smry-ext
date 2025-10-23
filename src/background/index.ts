@@ -45,7 +45,7 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create(
       {
         id: CONTEXT_MENU_ID,
-        title: "13ft • Summarize with SMRY",
+        title: "13ft • Summarize",
         contexts: ["page"],
       },
       () => {

@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
   "name": "13ft",
-  "description": "Jump over paywalls by sending any page to SMRY in a single click.",
+  "description": "Jump over paywalls in a single click.",
   "version": "0.1.0",
   "action": {
-    "default_title": "13ft • Summarize with SMRY",
+    "default_title": "13ft • Look over the wall.",
     "default_icon": {
       "16": "assets/icons/icon-16.png",
       "32": "assets/icons/icon-32.png"
@@ -26,7 +26,7 @@
         "default": "Ctrl+Shift+S",
         "mac": "Command+Shift+S"
       },
-      "description": "Summarize the current page with SMRY"
+      "description": "Summarize the current page"
     }
   },
   "options_ui": {

@@ -12,7 +12,7 @@ function findElements(): OptionElements {
   const status = document.getElementById("status") as HTMLSpanElement | null;
 
   if (!select || !status) {
-    throw new Error("SMRY options: Required elements are missing");
+    throw new Error("13ft options: Required elements are missing");
   }
 
   return { select, status };
