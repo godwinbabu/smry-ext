@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- Source files live in `src/` with `src/background/` for the service worker, `src/options/` for the options UI script, and `src/shared.ts` for cross-surface helpers.
+- Source files live in `src/` with `src/background/` for the 13ft service worker, `src/options/` for the options UI script, and `src/shared.ts` for cross-surface helpers.
 - Static extension artifacts (manifest, HTML, styling) are stored in `public/`; placeholder icons sit in `assets/icons/` and are copied during builds.
 - The TypeScript compiler emits into `dist/`; never commit the folder and re-run `npm run build` before loading the unpacked extension.
 

@@ -1,6 +1,6 @@
 import { getOpenMode } from "../shared.js";
 
-const CONTEXT_MENU_ID = "smry-context";
+const CONTEXT_MENU_ID = "13ft-context";
 const SMRY_BASE_URL = "https://smry.ai/";
 const SUPPORTED_PROTOCOL = /^https?:\/\//i;
 
@@ -24,7 +24,7 @@ async function summarizeTab(tab?: chrome.tabs.Tab): Promise<void> {
   const targetUrl = tab?.url;
 
   if (!targetUrl || !SUPPORTED_PROTOCOL.test(targetUrl)) {
-    console.warn("SMRY extension: No HTTP(S) URL available to summarize.");
+    console.warn("13ft: No HTTP(S) URL available to summarize.");
     return;
   }
 
@@ -45,13 +45,13 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create(
       {
         id: CONTEXT_MENU_ID,
-        title: "Summarize with SMRY",
+        title: "13ft • Summarize with SMRY",
         contexts: ["page"],
       },
       () => {
         const error = chrome.runtime.lastError;
         if (error) {
-          console.error("SMRY extension context menu error", error);
+          console.error("13ft context menu error", error);
         }
       }
     );
@@ -65,7 +65,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
   const url = info.pageUrl ?? tab?.url;
   if (!url) {
-    console.warn("SMRY extension: No URL found from context menu target.");
+    console.warn("13ft: No URL found from context menu target.");
     return;
   }
 
